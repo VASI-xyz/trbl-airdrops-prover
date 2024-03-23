@@ -30,7 +30,7 @@ assert len(unwrapped_randomness) == 185
 # Now, let's pick 185 NFTs each time popping one from the unused_trbls list
 ordered_choices = []
 for i, random_value in enumerate(unwrapped_randomness, start=1):
-    # Scale the random_value to the range of 0 to len(unused_trbls) - 1
+    # Scale the random_value to the range of 0 to len(unused_trbls)
     scaled_random_value = random_value % len(unused_trbls)
     choice = unused_trbls.pop(scaled_random_value)
     # print(f"{i}: Trbl Mkr #{choice}")
